@@ -1,0 +1,7 @@
+interface:
+  display_name: "涉外法务 PPT"
+  short_description: "严格检索、管理层表达与视觉质检的涉外法律演示"
+  default_prompt: "Use $foreign-legal-ppt to research and create a source-traceable management presentation."
+policy:
+  allow_implicit_invocation: true
+

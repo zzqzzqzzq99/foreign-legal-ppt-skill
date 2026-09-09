@@ -1,0 +1,9 @@
+*.pptx
+*.pdf
+*.zip
+ppt-profile.md
+work/
+output/
+.DS_Store
+Thumbs.db
+

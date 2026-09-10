@@ -24,9 +24,23 @@
 
 ## 第三步：保存个人配置
 
-将结果写入用户指定位置。用户没有指定时，在其 PPT 工作目录创建 `ppt-profile.md`，不要把个人资料写进公共 Skill 目录。使用 [assets/profile-template.md](../assets/profile-template.md) 作为结构，删除未确认的示例值。
+将结果写入用户指定位置。用户没有指定时，在其 PPT 工作目录创建一个个人工作区，不要把个人资料写进公共 Skill 目录。使用 [assets/workspace-config-template.md](../assets/workspace-config-template.md) 创建入口文件 `ppt-config.md`，再使用 [assets/profile-template.md](../assets/profile-template.md) 创建 `ppt-profile.md`。
 
 个人配置应覆盖默认场景、内容标准、检索标准、视觉规则、交付格式和何时暂停确认。引用用户提供的模板路径时使用实际可访问路径；不要复制或公开机密模板。
+
+个人工作区建议包含：
+
+```text
+我的PPT工作区/
+├─ ppt-config.md
+├─ ppt-profile.md
+├─ 口径库/
+│  ├─ _目录.md
+│  └─ _反例.md
+└─ 参考样张/
+```
+
+新 Agent 先读取 `ppt-config.md`，再按其中的实际路径加载配置。路径失效时向用户确认新位置，不在整台电脑中无边界搜索。
 
 ## 第四步：试运行
 
